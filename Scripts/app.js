@@ -4,7 +4,7 @@ var travelReport = (function () {
 "use strict";
 console.log("App Started...")
 
-// Article portion text string Started
+// Article portion text string Start
 
 var IntroParagraph = document.getElementById("IntroParagraph");
 var introP = "Now is the time to travel to Greece. The country may be going through an economic crisis, but many travellers say that it hasn\'t impacted the experience of visiting. Plus, there may be some great deals. \n Greece has 1,400 islands, though only 230 of them are inhabited. \n And while everyone knows about Santorini and Mykonos, there are gorgeous lesser-known islands in Greece, too.";
@@ -46,8 +46,21 @@ var Gavdos = document.getElementById("Gavdos");
 var gavdosP = "Near the more well-known Crete, Gavdos is the most southern island in Greece — and the most southern spot in Europe discounting the Canaries. Only accessible by ferry, the remote island has only about 50 permanent residents, and can feel like your private playground. Local legend has it that the island was the home of goddess Calypso, who kept Odysseus prisoner here. Today, a favorite tourist activity is to visit the spot believed to be her cave. Be warned, you won\'t find any luxury hotels here. While the romantically under-developed, super laid back island has a number of rooms for rent, those are limited, as the real draw here for many is the free, seaside camping.";
 Gavdos.textContent = gavdosP;
 
+// form portion id data get Start here
+// Set event button 
+SubmitBtn.addEventListener("click", function(event){
+    event.preventDefault();
 
+    let FirstName = document.getElementById("firstName").value;
+    let LastName = document.getElementById("lastName").value;
+    let Email = document.getElementById("email").value;
+    let Comments = document.getElementById("comments").value;
 
+    console.info("First Name: " , FirstName);
+    console.info("Last Name: " , LastName);
+    console.info("Email: " , Email);
+    console.info("Comments: " , Comments);
+    });
 
 })();
 
